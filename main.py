@@ -13,10 +13,12 @@ planets = (
     ('Neptune', 4500)
 )
 
+
 def planet_menu():
     print('=' * DASH_LENGTH)
     print(f"{'#1 ', planets[1][1], '= ', planets[1][1], ' million miles':.<{COLUMN_LENGTH}}")
     print('=' * DASH_LENGTH)
+
 
 if __name__ == '__main__':
     planet_menu()
