@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2179385c-f414-48ba-bb2c-e3e53a061de6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/planets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/planets.iml" afterDir="false" />
+    <list default="true" id="2179385c-f414-48ba-bb2c-e3e53a061de6" name="Changes" comment="Funsies making changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -75,7 +73,20 @@
       <option name="presentableId" value="Default" />
       <updated>1706804897574</updated>
     </task>
+    <task id="LOCAL-00001" summary="Funsies making changes">
+      <option name="closed" value="true" />
+      <created>1707237822529</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707237822529</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Funsies making changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funsies making changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -84,6 +95,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>6</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -41,7 +41,9 @@ def display_abs_distance(planet1_num, planet2_num):
     planet2_name, planet2_dist = planet2_info
 
     calc_dist = abs(planet1_dist - planet2_dist)
-    print(calc_dist)
+    print(" ")
+    print(planet1_name, " and ", planet2_name, " are ", calc_dist, "million miles apart")
+    print(" ")
 
 
 def planet_menu():
@@ -53,20 +55,38 @@ def planet_menu():
         print(f"#{menu_number} {planet:<7} = {distance:>4} million miles")
         menu_number += 1
     print('=' * DASH_LENGTH)
+    print("To calculate the distance between two planets")
 
 
-if __name__ == '__main__':
+def main():
     # Docstring
     planet_menu()
 
     while True:
-        planet1 = print(get_integer_input("Please enter the 1st Planet # ", min_num=0, max_num=len(planets)))
+        print("Enter two planet numbers or 0 to quit:")
+        print('=' * DASH_LENGTH)
+        planet1_num = get_integer_input("Please enter the 1st Planet # ", min_num=0, max_num=len(planets))
 
-        if planet1 == 0:
+        if planet1_num == 0:
             break
 
-    while True:
-        planet2 = print(get_integer_input("Please enter the 2nd Planet # ", min_num=0, max_num=len(planets)))
+        while True:
+            planet2_num = get_integer_input("Please enter the 2nd Planet # ", min_num=0, max_num=len(planets))
 
-        if planet2 == 0:
+            if planet1_num == planet2_num:
+                print("Choose a different planet. Same planet was chosen.")
+
+            else:
+                break
+
+        if planet2_num == 0:
             break
+
+        display_abs_distance(planet1_num, planet2_num)
+
+        input("Press enter to continue...")
+        print('=' * DASH_LENGTH)
+
+
+if __name__ == '__main__':
+    main()
