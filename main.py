@@ -1,6 +1,19 @@
-DASH_LENGTH = 100
+"""
+Usage: main.py
+Allow the user to calculate distances between two planets based on average distances from the sun.
+
+GitHub: https://github.com/lindllgrn/PlanetCalculator
+"""
+
+# metadata
+__author__ = "Lindsay Green,  Hunter Schoch"
+__date__ = "2024/02/08"
+__email__ = "lindllgrn@gmail.com, hnschoch@gmail.com"
+__version__ = "1.0.0"
+
+DASH_LENGTH = 60
 # Establishes a 40 character width limit for the dividing lines for aesthetic purposes
-COLUMN_LENGTH = 100
+COLUMN_LENGTH = 60
 
 planets = (
     ('Mercury', 57),
