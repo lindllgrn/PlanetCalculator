@@ -15,7 +15,7 @@ DASH_LENGTH = 60
 # Establishes a 60 character width limit for the dividing lines for aesthetic purposes
 COLUMN_LENGTH = 60
 
-planets = (  # tuple for holding values of planet names and their distance from earth
+planets = (  # tuple for holding values of planet names and their distance from the Sun
     ('Mercury', 57),
     ('Venus', 108),
     ('Earth', 150),
@@ -78,9 +78,10 @@ def display_abs_distance(planet1_num, planet2_num):
 
 def planet_menu():
     """
-    creates the starting menu which displays the planets and how many miles away from Earth they are
+    creates the starting menu which displays the planets and how many miles away from the Sun they are
     :return: user input
     """
+
     print('=' * DASH_LENGTH)
     print("Planet's Average Distance From Sun")
     print('=' * DASH_LENGTH)
@@ -97,6 +98,7 @@ def main():
     runs the program in its entirety, accounting for error handling
     :return: user input
     """
+
     planet_menu()  # displays the starting menu
 
     while True:
