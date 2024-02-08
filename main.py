@@ -32,9 +32,21 @@ def get_integer_input(message, min_num=0, max_num=0):
             print("\tinvalid input: please enter a number.")
             continue
 
+
 def display_abs_distance(planet1_num, planet2_num):
+    planet1_info = planets[planet1_num - 1]
+    planet1_name, planet1_dist = planet1_info
+
+    planet2_info = planets[planet2_num - 1]
+    planet2_name, planet2_dist = planet2_info
+
+    calc_dist = abs(planet1_dist - planet2_dist)
+    print(calc_dist)
+
 
 def planet_menu():
+    print('=' * DASH_LENGTH)
+    print("Planet's Average Distance From Sun")
     print('=' * DASH_LENGTH)
     menu_number = 1
     for planet, distance in planets:
@@ -44,4 +56,17 @@ def planet_menu():
 
 
 if __name__ == '__main__':
+    # Docstring
     planet_menu()
+
+    while True:
+        planet1 = print(get_integer_input("Please enter the 1st Planet # ", min_num=0, max_num=len(planets)))
+
+        if planet1 == 0:
+            break
+
+    while True:
+        planet2 = print(get_integer_input("Please enter the 2nd Planet # ", min_num=0, max_num=len(planets)))
+
+        if planet2 == 0:
+            break
